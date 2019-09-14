@@ -1,4 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Orbitron:500,900&display=swap');
 
+.timer .timer-value {
+    font-size: 2em !important;
+    font-family: 'Orbitron', sans-serif !important;
+    font-weight: 900;
+}
+
+.player-name {
+    display: flex;
+    align-items: baseline;
+
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    font-size: 2em !important;
+    font-family: 'Audiowide', sans-serif !important;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.player-name i {
+    margin-left: auto;
+}
+
+.text-right .player-name {
+    justify-content: flex-end;
+}
+.text-right .player-name i {
+    margin-right: auto;
+}
 
 .fixed-bottom {
 	display: none;
