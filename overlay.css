@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide|Orbitron:500,900&display=swap');
 
+body {
+    overflow:hidden;
+}
 
 #playback-body > .row {
     height: 100vh;
