@@ -1,9 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide|Orbitron:500,900&display=swap');
 
-.timer .timer-value {
-    font-size: 2em !important;
+
+#playback-body > .row {
+    height: 100vh;
+}
+#playback-body > .row > .col-md-3 {
+    display: flex;
+    flex-direction: column;
+}
+#playback-body > .row > .col-md-3 > *:last-child {
+    flex: 1 1 auto;
+    perspective: 500px;
+    perspective-origin: 50% 25%;
+    padding-top: 10px;
+}
+.ship-container {
+    transform: rotateY(3deg);
+}
+#playback-body > .row > .col-md-3.text-right .ship-container {
+    transform: rotateY(-3deg);
+}
+
+.timer {
+    padding: 12px !important;
+}
+.timer-value {
+    font-size: 1.8em !important;
+    line-height: 1;
     font-family: 'Orbitron', sans-serif !important;
     font-weight: 900;
+}
+
+.player-points {
+    flex: 1 1 0;
+}
+.player-points-right {
+    text-align: right;
 }
 
 .player-name {
@@ -12,11 +44,15 @@
 
     margin-top: 10px;
     margin-bottom: 15px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 
-    font-size: 2em !important;
+    font-size: 1.8em !important;
     font-family: 'Audiowide', sans-serif !important;
     font-weight: 400;
     text-transform: uppercase;
+    
+    transform: translateX(18px) perspective(200px) rotateY(4deg);
 }
 
 .player-name i {
@@ -25,8 +61,10 @@
 
 .text-right .player-name {
     justify-content: flex-end;
+    transform: translateX(-18px) perspective(200px) rotateY(-4deg);
 }
 .text-right .player-name i {
+    margin-left: 0;
     margin-right: auto;
 }
 
