@@ -11,7 +11,7 @@
     --fg-side-r: var(--fgc-side-r, 22);
     --fg-side-g: var(--fgc-side-g, 24);
     --fg-side-b: var(--fgc-side-b, 48);
-    --fg-side-a: var(--fgc-side-b, 1);
+    --fg-side-a: var(--fgc-side-a, 1);
     
     --fg-side-gradient: var(--fgc-side-gradient, linear-gradient(
         90deg,
